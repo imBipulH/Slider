@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1320px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: red;
+}
+.slide{
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    transform: translateX(100%);
+    overflow: hidden;
+}
+.active{
+    transform: translateX(0%) !important;
+}
+.slider .one{
+    background: url(./image/jess-bailey-l3N9Q27zULw-unsplash.jpg) no-repeat center / cover;
+
+}
+.slider .two{
+    background: url(./image/carson-arias-7Z03R1wOdmI-unsplash.jpg) no-repeat center / cover;
+}
+.slider .three{
+    background: url(./image/diego-ph-fIq0tET6llw-unsplash.jpg) no-repeat center / cover;
+}
+
+.prev{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    background: #d87e7e;
+    z-index: 999;
+
+}
+.next{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    background: #d87e7e;
+    z-index: 999;
+
+}
